@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 function Guestbookpage(props) {
-    return (
-        <div>
-            
-        </div>
-    );
+  return <div>방명록</div>;
 }
 
 export default Guestbookpage;

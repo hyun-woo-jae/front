@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 function Calenderpage(props) {
-    return (
-        <div>
-            
-        </div>
-    );
+  return <div>달력</div>;
 }
 
 export default Calenderpage;

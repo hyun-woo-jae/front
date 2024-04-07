@@ -1,17 +1,30 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Homepage from './pages/home/Homepage';
-import Footer from './components/Footer';
-import CustomAppBar from './components/Appbar';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Homepage from "./pages/home/Homepage";
+import CustomAppBar from "./components/Appbar";
+import Footer from "./components/Footer";
+import Listpage from "./pages/study/Listpage";
+import Postingpage from "./pages/study/Postingpage";
+import Detailpage from "./pages/study/Detailpage";
+import Guestbookpage from "./pages/Guestbookpage";
+import Calenderpage from "./pages/Calenderpage";
 
-const App = () => {
+function App() {
   return (
     <Router>
-      <CustomAppBar />
-      <Homepage />
-      <Footer />
+      <div className="App">
+        <CustomAppBar />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/calender" element={<Calenderpage />}/>
+          <Route path="/study" element={<Listpage />} />
+          <Route path="/study_posting" element={<Postingpage />} />
+          <Route path="/study/detail/:id" element={<Detailpage />} />
+          <Route path="/guest_book" element={<Guestbookpage />} />
+        </Routes>
+        <Footer />
+      </div>
     </Router>
   );
-};
+}
 
 export default App;
