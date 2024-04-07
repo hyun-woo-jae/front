@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Listpage from "./pages/study/Listpage";
 import Postingpage from "./pages/study/Postingpage";
 import Detailpage from "./pages/study/Detailpage";
-import Guestbookpage from "./pages/Guestbookpage";
+import Guestbookpage from "./pages/guest/Guestbookpage";
 import Calenderpage from "./pages/Calenderpage";
 
 function App() {
